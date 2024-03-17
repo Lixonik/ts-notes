@@ -9,7 +9,7 @@ of(0, 1, 2).pipe(
     mergeMap((id) => {
 
         return getFromID(id)
-    }),
+    }, 1),
     tap(result => console.log(result)),
 ).subscribe()
 
